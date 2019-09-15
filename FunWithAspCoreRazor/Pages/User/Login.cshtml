@@ -1,0 +1,17 @@
+﻿@page
+@model MyApp.Namespace.LoginModel
+@{
+    ViewData["Title"] = "Sign in";
+}
+
+<html>
+    <body>
+        <h1>Sign in</h1>
+
+        <form method="POST">
+            <div>Login: <input asp-for="UserLogin.Login" /></div>
+            <div>Password: <input asp-for="UserLogin.Password" /></div>
+            <input type="submit" />
+        </form>
+    </body>
+</html>
